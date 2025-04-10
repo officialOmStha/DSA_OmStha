@@ -200,6 +200,7 @@ public class CircularDoublyLinkedListOperations {
                     System.out.print("Enter data: ");
                     data = sc.nextInt();
                     list.insertAtBeginning(data);
+                    list.displayForward();
                     break;
                 case 2:
                     System.out.print("Enter data: ");

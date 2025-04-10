@@ -156,9 +156,8 @@ public class LinkedListOperations {
             System.out.println("4. Delete from Beginning");
             System.out.println("5. Delete from End");
             System.out.println("6. Delete at Position");
-            System.out.println("7. Display List");
-            System.out.println("8. Search Element");
-            System.out.println("9. Exit");
+            System.out.println("7. Search Element");
+            System.out.println("8. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
 
@@ -167,11 +166,13 @@ public class LinkedListOperations {
                     System.out.print("Enter data: ");
                     data = sc.nextInt();
                     list.insertAtBeginning(data);
+                    list.display();
                     break;
                 case 2:
                     System.out.print("Enter data: ");
                     data = sc.nextInt();
                     list.insertAtEnd(data);
+                    list.display();
                     break;
                 case 3:
                     System.out.print("Enter data: ");
@@ -179,27 +180,28 @@ public class LinkedListOperations {
                     System.out.print("Enter position: ");
                     position = sc.nextInt();
                     list.insertAtPosition(data, position);
+                    list.display();
                     break;
                 case 4:
                     list.deleteFromBeginning();
+                    list.display();
                     break;
                 case 5:
                     list.deleteFromEnd();
+                    list.display();
                     break;
                 case 6:
                     System.out.print("Enter position to delete: ");
                     position = sc.nextInt();
                     list.deleteAtPosition(position);
-                    break;
-                case 7:
                     list.display();
                     break;
-                case 8:
+                case 7:
                     System.out.print("Enter element to search: ");
                     data = sc.nextInt();
                     list.search(data);
                     break;
-                case 9:
+                case 8:
                     System.out.println("Exiting...");
                     sc.close();
                     return;

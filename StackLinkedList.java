@@ -75,8 +75,7 @@ public class StackLinkedList {
             System.out.println("1. Push");
             System.out.println("2. Pop");
             System.out.println("3. Peek");
-            System.out.println("4. Display");
-            System.out.println("5. Exit");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
 
@@ -85,17 +84,16 @@ public class StackLinkedList {
                     System.out.print("Enter value to push: ");
                     value = sc.nextInt();
                     stack.push(value);
+                    stack.display();
                     break;
                 case 2:
                     stack.pop();
+                    stack.display();
                     break;
                 case 3:
                     stack.peek();
                     break;
                 case 4:
-                    stack.display();
-                    break;
-                case 5:
                     System.out.println("Exiting...");
                     sc.close();
                     return;

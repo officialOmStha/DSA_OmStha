@@ -83,8 +83,7 @@ public class QueueLinkedList {
             System.out.println("1. Enqueue");
             System.out.println("2. Dequeue");
             System.out.println("3. Peek");
-            System.out.println("4. Display");
-            System.out.println("5. Exit");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
 
@@ -93,17 +92,17 @@ public class QueueLinkedList {
                     System.out.print("Enter value to enqueue: ");
                     value = sc.nextInt();
                     queue.enqueue(value);
+                    queue.display();
                     break;
                 case 2:
                     queue.dequeue();
+                    queue.display();
                     break;
                 case 3:
                     queue.peek();
-                    break;
-                case 4:
                     queue.display();
                     break;
-                case 5:
+                case 4:
                     System.out.println("Exiting...");
                     sc.close();
                     return;
