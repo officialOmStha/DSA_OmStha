@@ -206,6 +206,7 @@ public class CircularDoublyLinkedListOperations {
                     System.out.print("Enter data: ");
                     data = sc.nextInt();
                     list.insertAtEnd(data);
+                    list.displayForward();
                     break;
                 case 3:
                     System.out.print("Enter data: ");
@@ -213,17 +214,21 @@ public class CircularDoublyLinkedListOperations {
                     System.out.print("Enter position: ");
                     position = sc.nextInt();
                     list.insertAtPosition(data, position);
+                    list.displayForward();
                     break;
                 case 4:
                     list.deleteFromBeginning();
+                    list.displayForward();
                     break;
                 case 5:
                     list.deleteFromEnd();
+                    list.displayForward();
                     break;
                 case 6:
                     System.out.print("Enter position to delete: ");
                     position = sc.nextInt();
                     list.deleteAtPosition(position);
+                    list.displayForward();
                     break;
                 case 7:
                     list.displayForward();
